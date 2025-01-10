@@ -30,5 +30,5 @@ I could think to do was to \033[33m{verb_2}\033[m \033[36mover and over. Miracul
 that caused it to stop, but not before it tried to \033[33m{verb_3}
 \033[36mright in front of my family. Because they were going to the \033[33m{place} \033[36mto eat
 a delicious \033[33m{food} \033[36mwithout me, only because I was wearing a shiny \033[33m{clothing}
-\033[36mfrom my favorite movie called that is \033[33m{movie.title()}\033[36m.""")
+\033[36mfrom my favorite movie called \033[33m{movie.title()}\033[36m.""")
 print("\033[33m-=-\033[m" * 30)
