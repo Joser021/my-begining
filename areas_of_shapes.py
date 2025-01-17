@@ -1,67 +1,86 @@
 # normal assignment
-# it calculates the are of a square
-sqr_length = float(input("What us the length of a side of the square? "))
-sqr_area = sqr_length ** 2
-print(f"The are of the square is: {sqr_area}\n")
+# it calculates the area of a square
+print()
+square_length = float(input("What is the length of a side of the square? "))
+square_area = square_length ** 2
+print(f"The area of the square is: {square_area}")
+print()
 
 # it calculates the area of a rectangle
-rec_length = float(input("What is the length of rectangle? "))
-rec_width = float(input("What is the width of rectangle? "))
-rec_area = rec_length * rec_width
-print(f"The area of the rectangle is: {rec_area}\n")
+rectangle_length = float(input("What is the length of rectangle? "))
+rectangle_width = float(input("What is the width of rectangle? "))
+rectangle_area = rectangle_length * rectangle_width
+print(f"The area of the rectangle is: {rectangle_area}")
+print()
 
 # it calculates the area of a circle
-cir_radius = float(input("What is the radius of the circle? "))
-cir_area = 3.14 * cir_radius ** 2
-print(f"The are of the circle is: {cir_area}\n")
+circle_radius = float(input("What is the radius of the circle? "))
+circle_area = 3.14 * circle_radius ** 2
+print(f"The area of the circle is: {circle_area}")
+print()
 
 
 
-#first steched assignment
+# first streched assignment: Library
+import math
+print()
+circle_radius = float(input("What is the radius of the circle? "))
+circle_area = math.pi * circle_radius ** 2
+print(f"The area of the circle is: {circle_area:.2f}")
+print()
+
+
+
+#second strech assignment: The Same Value
 import math
 
 #prompt from the user
-print(f"{math}")
-length = float(input("what is the length you want to insert in? "))
-pi = math.pi
+print()
+side = float(input("What is the length of a side of the Square? "))
 
 #result of the calculations
-square_area = length ** 2
+square_area = side ** 2
 print(f"The area of the square is: {square_area:.2f}")
 
-circle_area = pi * length ** 2
+circle_area = math.pi * side ** 2
 print(f"The area of the circle is: {circle_area:.2f}")
 
-cubic = length ** 3
+cubic = side ** 3
 print(f"The cubic value is: {cubic:.2f}")
 
-sphere = 4 / 3 * pi * length ** 3
+sphere = 4 / 3 * math.pi * side ** 3
 print(f"The sphere value is: {sphere:.2f}")
+print()
 
 
 
 
-# it calculates the are of a square
-sqr_length = float(input("Insert the length of a square in centimeters: "))
-sqr_cm2 = sqr_length ** 2
-sqr_m2 = sqr_cm2 / 10000
+#Third stretch assignment: Centimeter -> Meters
+print()
+square_length = float(input("Insert the length of a square in centimeters: "))
+square_cm2 = square_length ** 2
+square_m2 = square_cm2 / 10000
 print(f"""The are of the square is:
-{sqr_cm2} cm²
-{sqr_m2} m²\n""")
+{square_cm2} cm²
+{square_m2} m²
+""")
 
 # it calculates the area of a rectangle
-rec_length = float(input("Insert the length of a rectangle in centimeters: "))
-rec_width = float(input("Insert the the width of a rectangle in Centimeters: "))
-rec_cm2 = rec_length * rec_width
-rec_m2 = rec_cm2 / 10000
+rectangle_length = float(input("Insert the length of a rectangle in centimeters: "))
+rectangle_width = float(input("Insert the the width of a rectangle in Centimeters: "))
+rectangle_cm2 = rectangle_length * rectangle_width
+rectangle_m2 = rectangle_cm2 / 10000
 print(f"""The area of the rectangle is:
-{rec_cm2}cm²
-{rec_m2}m²\n""")
+{rectangle_cm2}cm²
+{rectangle_m2}m²
+""")
 
 # it calculates the area of a circle
-cir_radius = float(input("Insert the radius of the circle in Centimeters: "))
-cir_cm2 = 3.14 * cir_radius ** 2
-cir_m2 = cir_cm2 / 10000
+circles_radius = float(input("Insert the radius of the circle in Centimeters: "))
+circles_cm2 = 3.14 * circles_radius ** 2
+circles_m2 = circles_cm2 / 10000
 print(f"""The are of the circle is:
-{cir_cm2}cm²
-{cir_m2}m²""")
+{circles_cm2}cm²
+{circles_m2}m²
+""")
+
