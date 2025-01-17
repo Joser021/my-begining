@@ -1,4 +1,4 @@
-#badget ID
+#badge ID
 print("Please enter the following information:")
 # it ask for the person's data
 first = str(input("First name: "))
