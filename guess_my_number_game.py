@@ -1,34 +1,32 @@
-from random import randint
-def play():
-    magic_number = randint(1, 100) 
-    guessing = 0
-    tries = 0
+play_again = "yes"
+print()
+while play_again == "yes":
 
-    while guessing != magic_number:
-        guessing = int(input("What is your guess? "))
-        tries += 1
+    from random import randint
 
-        if guessing > magic_number:
+    magic_number = randint(1, 100)
+    guess = -1
+    guess_count = 0
+
+    while magic_number != guess:
+        guess = int(input("What is your guess? "))
+        guess_count += 1
+
+        if guess == magic_number:
+            print("You did it! Congrats!!")
+
+        elif guess > magic_number:
             print("Lower")
 
-        elif guessing < magic_number:
+        else:
             print("Higher")
 
-        elif guessing == magic_number:
-            print("\nYou Guessed!")
-            break
-    print(f"Attempts: {tries}")
+    print(f"Guesses: {guess_count}")
+    print()
 
-play()
-
-while True:
-    again = str(input("Play Again?\n Yes or No")).lower()
-    if again == "yes":
-        play()
-
-    elif again == "no":
-        print("Game Over!")
-        break
+    play_again = str(input("Do you want to play again? (Yes or No)\n")).lower()
+    if play_again == "yes":
+        print()
+        print("NEW GAME")
     else:
-        print(again)
-    
+        print("Thanks for playing!")
