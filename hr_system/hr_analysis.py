@@ -1,10 +1,10 @@
 # core requirements
-# with open("hr_system.txt") as people_data:
-#     for line in people_data:
-#         stripped = line.strip()
-#         splitted = stripped.split(" ")
+with open("hr_system.txt") as people_data:
+    for line in people_data:
+        stripped = line.strip()
+        splitted = stripped.split(" ")
 
-#         print(f"Name: {splitted[0]}, {splitted[2]}")
+        print(f"Name: {splitted[0]}, {splitted[2]}")
 
 
 # stretch challenge
