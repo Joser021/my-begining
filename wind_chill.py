@@ -42,13 +42,15 @@ while True:
             result = calculates_wind(temperature, wind_speed)
             print(f"At temperature {temperature}°F, and wind speed {wind_speed}mph, the windchill is: {result:.2f}°F")
     
-    print()
-    another_temperature = str(input("Do you want to try another temperature? ")).lower()
-
-    if another_temperature == "n":
-        print("Thank you for using. Goodbye.")
-        break
-
-    elif another_temperature == "s":
+    while True:
         print()
-        print("New temperature:")
+        another_temperature = str(input("Do you want to try another temperature? (YES/NO)")).lower()
+
+        if another_temperature == "yes":
+            print()
+            print("New temperature:")
+            break
+
+        elif another_temperature == "no":
+            print("Thank you for using. Goodbye.")
+            exit()
